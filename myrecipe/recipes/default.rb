@@ -1,4 +1,4 @@
-cookbook_file '/root/test.txt' do
+cookbook_file '/root/test.php' do
   source 'default.php'
   rights :read, 'Everyone'
 end
