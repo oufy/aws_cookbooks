@@ -1,5 +1,8 @@
+php_repo = 'ppa:ondrej/php5-oldstable'
+# php_repo = 'ppa:ondrej/ppa:ondrej/php5'
+
 execute 'exc_add_repo' do
-  command 'add-apt-repository -y ppa:ondrej/php5-oldstable'
+  command "add-apt-repository -y #{php_repo}"
 end
 
 execute 'exc_update_cache' do
