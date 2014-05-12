@@ -6,7 +6,7 @@ directory 'my_insead_conf_dir' do
   group 'root'
 end
 
-file 'local_directory_config_file' do
+template 'local_directory_config_file' do
   path '/etc/apache2/sites-available/myinsead.conf.d/local_directories.conf'
   action :create_if_missing
   source 'local_directories.conf.erb'
