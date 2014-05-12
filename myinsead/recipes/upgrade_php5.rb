@@ -13,3 +13,7 @@ end
 package 'php-sasl' do
   action :purge
 end
+
+file '/etc/php5/conf.d/sasl.ini' do
+  action :delete
+end
